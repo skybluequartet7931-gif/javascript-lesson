@@ -8,7 +8,7 @@ console.log('私のニックネームは'+ nickname + 'です。年齢は' + age
 // Q2 配列
 let languages = [ 'JavaScript', 'PHP', 'Ruby', 'Python', 'Go' ];
 
-console.log('私の好きな言語は' + languages[0] + 'です。次は' + languages[3] + 'を勉強してみたいです。');
+console.log(`私の好きな言語は${languages[0]}です。次は${languages[3]}を勉強してみたいです。`);
 
 // Q3 オブジェクト
 let user = {
@@ -116,10 +116,11 @@ let result = remainder(x, y);
 console.log(x + ' を ' + y + ' で割った余りは ' + result + ' です。');
 
 // Q10 スコープ
-function foo() {
-  let x = 1;
-}
-console.log(x);
+// function foo() {
+//   let x = 1;
+// }
+// console.log(x);
+
 // 関数内で定義した変数は、その関数内のみスコープが有効となります。
 // よって、上記の変数xは関数fooで定義されているので、
 // 関数の外から変数 x を参照しようとしても見つけることができず、エラーとなります。
